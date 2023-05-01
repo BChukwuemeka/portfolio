@@ -1,0 +1,178 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  list-style-type: none;
+  cursor: pointer;
+
+}
+
+.n-list > ul > li:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+/************ Mobile Responsive Nav *************/
+
+    .mobile-nav {
+      position: absolute;
+      height: 20rem;
+      width: 15rem;
+      transition: all 0.5s ease-in;
+      transform: translateY(20rem);
+      border-radius: 10px 0 10px 10px;
+      z-index: 999;
+      top: -13rem;
+      padding: 1rem 4.5rem 2rem;
+      display: flex;
+      line-height: 2rem;;
+      perspective: 1000px;
+      animation: mobileNav 0.5s ease-in-out forwards;
+      display: none;
+    }
+  
+    .menu-wrapper {
+      top: 1rem;
+      right: 2rem;
+      position: absolute;
+    }
+
+.mobile-lists {
+  top: 2rem;
+  list-style-type: none;
+  margin-bottom: 1rem;
+  
+}
+
+.mobile-lists li {
+  top: 2rem;
+  display: block;
+  margin: 0.8rem 10px;
+}
+
+    .nav__toggle-btn {
+      display: inline-block;
+      background: transparent;
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+    }
+
+
+    @keyframes mobileNav {
+        from {transform: translate(100%, -10rem );}
+        to {transform: translate(0, 20rem);}
+    }
+
+@media screen and (max-width : 940px) {
+
+  .n-list>ul {
+      display: none;
+    }
+  
+    .nav__toggle-btn {
+      display: inline-block;
+      background: transparent;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-left: 15rem;
+    }
+  
+    .nav__toggle-btn svg {
+      color: #ffdc18;
+    }
+  
+    .show__nav {
+      display: flex;
+    }
+  
+    .hide__nav {
+      display: none;
+    }
+
+     
+
+
+}
+
+
+@media screen and (max-width : 640px) {
+
+    .n-list>ul {
+        display: none;
+      }
+    
+      .nav__toggle-btn {
+        display: inline-block;
+        background: transparent;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-left: 3rem;
+      }
+    
+      .nav__toggle-btn svg {
+        color: #ffdc18;
+      }
+    
+      .show__nav {
+        display: flex;
+      }
+    
+      .hide__nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        width: 12rem;
+        top: -16rem;
+        padding: 1rem 2.5rem 2rem;
+        }
+
+}
+
+
+
+
+
+ 
+
+
+
+
+
+

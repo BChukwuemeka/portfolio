@@ -1,0 +1,171 @@
+.services {
+  padding: 0 3rem;
+  display: flex;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 13rem;
+  /* scroll view */
+}
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+
+.s-blur{
+  top: 13rem;
+  left: -18rem;
+  background: #abf1ff94;
+  /* position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px); */
+}
+
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.awesome > :nth-child(4) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.awesome > :nth-child(5) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.awesome > :nth-child(6) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.awesome > :nth-child(7) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.awesome > :nth-child(8) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+/* right sided */
+.cards {
+  position: relative;
+}
+.cards >* {
+  position: absolute;
+}
+
+.cards> div:nth-of-type(1) {
+  left: 14rem ;
+  
+}
+
+.cards> div:nth-of-type(2) {
+  left: -4rem ;
+  top: 12rem;
+}
+
+.cards> div:nth-of-type(3) {
+  left: 12rem ;
+  top: 19rem;
+}
+
+/* blur */
+.s-blur2 {
+  left: 14rem;
+  top: 8rem;
+  display: none;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+@media screen and (max-width: 980px) {
+  .services {
+
+      margin-top: 0;
+      flex-direction: column;
+      gap: 5rem;
+      height: auto;
+      padding: 0;
+    }
+
+  .cards {
+    margin: 0 0 12rem 5rem;
+    transform: scale(0.7);
+  }
+
+}
+
+
+
+@media screen and (max-width: 580px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    left: 2rem;
+    position: relative;
+  }
+
+    .cards>div:nth-of-type(1) {
+      left: 7rem;
+      position: static;
+    }
+  
+    .cards>div:nth-of-type(2) {
+     margin: 21rem 5rem 0 -9rem;
+      position: static;
+    }
+  
+    .cards>div:nth-of-type(3) {
+      margin: 40rem 0 0 -9rem;
+      position: static;
+    }
+  /* .cards > * {
+    position: static;
+  } */
+}
