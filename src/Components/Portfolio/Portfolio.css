@@ -62,11 +62,11 @@
   height: 12rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 } 
 
 .portfolio .swiper {
-  margin: 6rem 0 0 0;
+  margin: 2rem;
   width: 100%;
   height: 70%;
 }
@@ -88,12 +88,14 @@
 
 
         .portfolio .swiper {
-          overflow: visible !important;
-          height: 1rem;
+          /* overflow: visible !important; */
+                    width: 100%;
+          height: 10rem;
+          margin-bottom: 1rem;
         }
         
-        .portfolio img {
-          width: 14rem;
+        .portfolio .swiper img {
+          width: 15rem;
           height: 8rem;
           
         }

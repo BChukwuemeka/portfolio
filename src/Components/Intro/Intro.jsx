@@ -2,7 +2,7 @@ import './Intro.css'
 import Github from '../../img/github.png'
 import Linkedin from '../../img/linkedin.png'
 import Instagram from '../../img/instagram.png'
-import boy from '../../img/portfolioPics/portfolioImgN.png'
+import boy from '../../img/portfolioPics/portfolioimgg.png'
 import thumbup from '../../img/thumbup.png'
 // import Crown from '../../img/crown.png'
 import glassesimoji from '../../img/glassesimoji.png'
@@ -11,6 +11,7 @@ import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ThemeContext } from '../../Context'
 import { Link } from 'react-router-dom'
+import Contact from '../Contact/Contact'
 
 
 
@@ -40,14 +41,14 @@ const Intro = () => {
                     
                   <img src='../../img/portfolioPics/portfolioImg.png' alt=''/>'
                     
-                    <Link to="contact" spy={true} smooth={true}>
+                    <Link to= {Contact} spy={true} smooth={true}>
                         <button className="button i-button">Hire me</button>
                         
                     </Link>
 
 
                     <div className="i-icons">
-                        <Link to='https://BChukwuemeka.github.io'>
+                        <Link to='https://github.com/BChukwuemeka'>
                             <img src={Github} alt="" />
                         </Link>
 
