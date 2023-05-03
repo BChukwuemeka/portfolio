@@ -53,7 +53,7 @@ const Portfolio = () => {
                             pagination={{ clickable: true }}
                             autoplay={{ delay: 3000}}
                     >
-                            <SwiperSlide ><img src={gymWebsite} alt='FeatureImage' /></SwiperSlide>
+                            <SwiperSlide ><Link to="https://bchukwuemeka.github.io/brichandbezgym/" ><img src={gymWebsite} alt='FeatureImage' /></Link></SwiperSlide>
                             <SwiperSlide ><Link to="https://bchukwuemeka.github.io/pordministries/" ><img src={PORDMinistries} alt='FeatureImage' /></Link></SwiperSlide>
                             <SwiperSlide ><Link to="https://bchukwuemeka.github.io/brichandbezai/" ><img src={AIWebsite} alt='FeatureImage' /></Link></SwiperSlide>
                             <SwiperSlide ><img src={dataWebsite} alt='FeatureImage' /></SwiperSlide>
