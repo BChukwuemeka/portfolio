@@ -11,7 +11,8 @@ import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { ThemeContext } from '../../Context'
 import { Link } from 'react-router-dom'
-import Contact from '../Contact/Contact'
+import { useState } from 'react'
+// import Form from '../Form/Form'
 
 
 
@@ -23,28 +24,35 @@ const Intro = () => {
 
     const transition = {duration : 2, type: 'spring'}
 
+    const [isMoreShowing, setIsMoreShowing] = useState(false)
 
     return ( 
 
-            
 
 
         <div className="intro">
             <div className="i-left">
                 <div className="i-name">
-                <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+                <span style={{ color: darkMode ? "white" : "" }}>Hello! I Am</span>
                     <span>Chukwuemeka Chukwuemeka</span>
-                    <span>Frontend Developer with high level
-                         of experience in web designing and 
-                         development, producing high quality 
-                        work</span>
+                    <span>I specialize in front-end development using React, With in-depth knowledge of JavaScript, Object Oriented Programming, node express, and mongoose, I am well-equipped to tackle a wide range of web development challenges.</span>{isMoreShowing && <p className='more'>Creating beautiful, user-friendly interfaces that are optimized for performance and scalability. Additionally, my expertise in direct response email copywriting and cold email copywriting allows me to deliver compelling content that drives engagement and conversion.
+
+                        Over the years, I have worked on numerous projects, from simple landing pages to complex web applications. I take pride in my ability to communicate effectively with clients, understand their unique needs, and deliver solutions that exceed their expectations. Whether you need a website built from scratch or want to improve your existing web presence, I am confident that I can help you achieve your goals.
+
+                        So if you're looking for a talented web developer who can bring your vision to life, look no further. Contact me today to discuss your project and see how I can help you take your online presence to the next level.</p>}
                     
-                  <img src='../../img/portfolioPics/portfolioImg.png' alt=''/>'
+                  <img src='../../img/portfolioPics/portfolioImg.png' alt=''/>
                     
-                    <Link to= {Contact} spy={true} smooth={true}>
-                        <button className="button i-button">Hire me</button>
+                    <button onClick={() => setIsMoreShowing(prev => !prev)} className="button i-button">
                         
-                    </Link>
+                        {
+                        !isMoreShowing ? 'More' : 'Less'
+                    }
+                    
+                    </button>
+                        
+
+                      
 
 
                     <div className="i-icons">

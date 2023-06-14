@@ -43,7 +43,7 @@ const theme = useContext(ThemeContext);
 
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
 
-                <li>
+                <li >
                     Home
                 </li>
 
@@ -133,13 +133,13 @@ const theme = useContext(ThemeContext);
                       </li>
                     </Link>
 
-                    <Link to="testimonial" spy={true} smooth={true}>
+                    <Link onClick=  {() =>  setIsNavShowing(false)} to="testimonial" spy={true} smooth={true}>
                       <li>
                           Testimonial
                       </li>
                     </Link>
     
-                    <Link to="contact" spy={true} smooth={true}>
+                    <Link onClick=  {() =>  setIsNavShowing(false)} to="contact" spy={true} smooth={true}>
                           <li>
                             contact
                           </li> 

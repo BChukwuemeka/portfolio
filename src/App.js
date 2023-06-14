@@ -15,6 +15,7 @@ import { ThemeContext } from "./Context";
 
 
 
+
 const App = () => {
 
         const theme = useContext(ThemeContext);
@@ -22,13 +23,14 @@ const App = () => {
 
 
     return ( 
+    
         <div className="App" 
             style={
                 {background : darkMode ? 'black' : '',
                 color : darkMode ? "#fff" : ''
             }
             }
-        >
+            >
             <Navbar />
             <Intro />
             <Services />
@@ -38,7 +40,8 @@ const App = () => {
             <Testimonial />
             <Contact />
             <Footer />
-        </div>
+            </div>
+      
      );
 }
  

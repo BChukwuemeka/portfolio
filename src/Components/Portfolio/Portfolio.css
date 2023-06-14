@@ -1,10 +1,10 @@
-.portfolio {
+.heading {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 30rem;
+  margin: 3rem 0 3rem 0;
 
 }
 /* heading */
@@ -12,60 +12,101 @@
   color: var(--black);
   font-size: 2rem;
   font-weight: bold;
+
 }
 
 .portfolio span:nth-of-type(2) {
   color: var(--orange);
   font-size: 2.5rem;
   font-weight: bold;
-}
-
-/* 
-.portfolio .swiper-container {
-  width: 100%;
-}
-
-.portfolio .swiper-wrapper {
-  width: 50%;
-}
-
-.portfolio .swiper-slide {
-  text-align: center;
-  width: auto;
-}
-
-.portfolio .swiper-image {
-  height: 400px;
-  width: auto;
-} */
-
-
-
-/* slider */
-/* .portfolio .swiper{
-  overflow: visible!important;
-  height: 1rem;
-  margin: 1rem 0;
-  padding: 1rem;
+  
 }
 
 
-.portfolio .swiper-slide {
-  display: flex;
-  justify-items: center;
-  margin: 0 2rem;
-}
-
-*/
-.portfolio img {
+/* .portfolio img {
   width: 22rem;
   height: 12rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
   margin-bottom: 2rem;
-} 
+}  */
 
-.portfolio .swiper {
+
+.PortfolioImgs__container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .portfolio .swiper {
   margin: 2rem;
   width: 100%;
   height: 70%;
@@ -73,6 +114,7 @@
 
 .portfolio .swiper-slide {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -84,12 +126,12 @@
 
 
 /* slider */
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
 
 
         .portfolio .swiper {
-          /* overflow: visible !important; */
-                    width: 100%;
+          /* overflow: visible !important; 
+          width: 100%;
           height: 10rem;
           margin-bottom: 1rem;
         }
@@ -108,12 +150,12 @@
         
         .portfolio img {
        border-radius: 10px;
-       width: 20rem;
+       width: 16rem;
        height: 10rem;
   
      }
   
-}
+} */ 
 
 
 

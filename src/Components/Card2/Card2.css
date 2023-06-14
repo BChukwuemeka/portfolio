@@ -1,0 +1,85 @@
+/* .card {
+  width: 15rem;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 10rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--orangeCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 0px 26px 2rem 26px;
+}
+
+*/
+
+
+
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+
+}
+
+.card2 span:nth-of-type(1) {
+  color: var(--orange);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  /* margin: 1rem; */
+}
+
+.card2 span:nth-of-type(2) {
+  color: var(--orange);
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+
+.card2 > img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+} 
+
+.card2 {
+  padding: 0.2rem;
+  border: 2px solid var(--orange);
+  width: 25rem;
+  height: 15rem;
+  border-radius: 20px;
+}
+
+
+
+.c-button {
+    background: #FFFFFF;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    color: #5290FD;
+}
+
+.c-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* cards */
+
+
+
+
+@media screen and (max-width: 580px){
+  .card2{
+    width: auto;
+  }
+}

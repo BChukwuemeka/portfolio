@@ -1,32 +1,18 @@
 .services {
-  padding: 0 3rem;
-  display: flex;
-  height: 30rem;
-  margin-bottom: 8rem;
-  margin-top: 2rem;
-  margin-bottom: 13rem;
-  /* scroll view */
+ display: flex;
+  margin: 0 0 13rem 0;
 }
 /* left side */
 .awesome {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* gap: 20px; */
 }
 
 .s-blur{
   top: 13rem;
   left: -18rem;
   background: #abf1ff94;
-  /* position: absolute;
-  width: 22rem;
-  height: 14rem;
-  border-radius: 50%;
-  z-index: -9;
-  top: -18%;
-  left: 56%;
-  filter: blur(72px); */
 }
 
 .awesome > :nth-child(1) {
